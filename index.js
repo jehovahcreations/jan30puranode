@@ -36,7 +36,7 @@ app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
 
-mongoose.connect("mongodb://pura:123456@34.93.244.100/pura?authSource=pura")
+mongoose.connect("mongodb://pura:123456@mongo.socialjusticemovement.in/pura?authSource=pura")
 mongoose.Promise = global.Promise
 const db = mongoose.connection
 db.on('error', console.error)
